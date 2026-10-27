@@ -17,7 +17,6 @@ export async function generate(opts: {
     contents: opts.prompt as ContentListUnion,
     config: {
       systemInstruction: opts.systemInstruction,
-      thinkingConfig: { thinkingBudget },
       ...(opts.responseSchema && {
         responseMimeType: "application/json",
         responseSchema: opts.responseSchema,
